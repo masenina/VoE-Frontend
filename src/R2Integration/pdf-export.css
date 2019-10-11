@@ -1,0 +1,73 @@
+@media print {
+    body.reportal-viewmode{
+        background-color: transparent;
+    }
+
+    .dashboard__main-wrapper.view-mode .dashboard__widget--small {
+        width: calc(50% - 1.429rem);
+    }
+
+    .dashboard__main-wrapper.view-mode .dashboard__widget {
+        border: 1px solid var(--divider-color);
+    }
+
+    table.Table thead td:first-child {
+        background-color:transparent;
+    }
+
+    .side-nav,
+    .comd-button__content___studio,
+    .comd-button___studio,
+    .text_headerorange,
+    .text_header,
+    .company-logo,
+    .ta-info-icon,
+    #chart-tables-switcher {
+        display:none;
+    }
+
+    .page-break {
+        page-break-after: always
+    }
+
+    .display-none {
+        display:none;
+    }
+
+    .legend-wrapper {
+        margin-left: 150px;
+    }
+
+    #sigTestingType {
+        justify-content: flex-start !important;
+        min-width: 100%;
+    }
+
+    /*TA fixes*/
+    .filter-bar > div > span:first-child {
+        width: 100% !important;
+    }
+    .dashboard__widget--large {
+        padding: 8px !important;
+        overflow: hidden;
+    }
+    .legend-wrapper .legend {
+        position: relative;
+        bottom: 5px;
+    }
+    #sigTestingLegend.legend-wrapper .legend:first-child {
+        bottom: -10px !important;
+    }
+    #sigTestingLegend.legend-wrapper .legend:last-child {
+        bottom: -25px !important;
+    }
+    .reportal-table>tbody>tr>td:not(:first-child) {
+        padding: 2px 4px !important;
+    }
+    .reportal-table>tbody>tr>td.cf_positive:after, .reportal-table>tbody>tr>td.cf_negative:after, .reportal-table>tbody>tr>td.cf_neutral:after {
+        margin: 0 0 -1px 4px !important;
+    }
+    #theme-distribution-chart {
+        overflow: hidden;
+    }
+}
